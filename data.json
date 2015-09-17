@@ -1,0 +1,16 @@
+[{
+    "name": "Kochi",
+    "lat": 10.010608,
+    "lng": 76.363518,
+    "info": "Kochi pazhaya Kochi alla!"
+}, {
+    "name": "Alappuzha",
+    "lat": 9.492696,
+    "lng": 76.318302,
+    "info": "Venice of the east!"
+}, {
+    "name": "Thiruvananthapuram",
+    "lat": 8.542707,
+    "lng": 76.865091,
+    "info": "The evergreen city of India!"
+}]
