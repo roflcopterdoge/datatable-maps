@@ -9,11 +9,13 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -31,6 +33,39 @@
         <div class="starter-template">
             <h1>jQuery datatable - Google maps API</h1>
             <div id="map"></div>
+            <nav class="navbar">
+                <div class="container">
+                    <button type="button" class="btn btn-default navbar-btn" id="addNewPlace">
+                      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      Add
+                    </button>
+
+                    <div id="dialog" title="Add a new place">
+                      <div class="alert alert-info" role="alert">Click on the map to update coordinates.</div>
+                      <div class="input-group">
+                        <span class="input-group-addon" id="newPlaceName">Name</span>
+                        <input type="text" class="form-control" placeholder="Kerala" aria-describedby="newPlaceName" id="newPlaceNamex">
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-addon" id="newPlaceLatiude">Latitude</span>
+                        <input type="text" class="form-control" placeholder="10"  id="newPlaceLatiudex" aria-describedby="newPlaceLatiude">
+                        <span class="input-group-addon">°</span>
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-addon" id="newPlaceLongitude">Longitude</span>
+                        <input type="text" class="form-control" placeholder="76.5"  id="newPlaceLongitudex" aria-describedby="newPlaceLongitude">
+                        <span class="input-group-addon">°</span>
+                      </div>
+
+                      <div class="input-group">
+                        <span class="input-group-addon">Info</span>
+                        <input type="text" class="form-control" aria-label="Some description."  id="newPlaceInfox">
+                      </div>
+                    </div>
+                </div>
+            </nav>
             <table id="datatablex" class="display">
                 <thead>
                     <tr>

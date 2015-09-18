@@ -14,3 +14,6 @@ body {
 .bolderText {
   font-weight: bolder;
 }
+#dialog {
+  display: none;
+}
